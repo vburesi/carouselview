@@ -69,7 +69,7 @@ public class SampleCarouselViewActivity extends AppCompatActivity {
         @Override
         public void setImageForPosition(int position, ImageView imageView) {
 
-            Picasso.with(getApplicationContext()).load(sampleNetworkImageURLs[position]).placeholder(sampleImages[0]).error(sampleImages[3]).fit().centerCrop().into(imageView);
+            Picasso.get().load(sampleNetworkImageURLs[position]).placeholder(sampleImages[0]).error(sampleImages[3]).fit().centerCrop().into(imageView);
 
             //imageView.setImageResource(sampleImages[position]);
         }
